@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Elements and Forms</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%; /* Makes the image responsive */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        form {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advanced HTML Elements and Forms</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <ol type="I">
+        <li>Introduction to HTML</li>
+        <li>Forms and Input Types</li>
+        <li>Multimedia Elements</li>
+        <li>Tables and Lists</li>
+    </ol>
+
+    <!-- Image from Pexels -->
+    <img src="https://images.pexels.com/photos/19387205/pexels-photo-19387205/free-photo-of-laptop-by-monitor-on-desk.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=" Monitor on Desk" width="500">
+
+    <!-- Table of Contacts -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Angelah Mogashoa</td>
+                <td>13 Clover, Sandton</td>
+                <td>+27817006321</td>
+                <td>Angelamogashoa6@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Tashly Mogas</td>
+                <td>13 Clover, Sandton</td>
+                <td>+27817006321</td>
+                <td>Tashlymogas@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="south_africa">South Africa</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="terms">Accept Terms and Conditions:</label>
+        <input type="checkbox" id="terms" name="terms" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
